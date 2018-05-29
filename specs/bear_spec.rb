@@ -5,7 +5,6 @@ require("minitest/rg")
 
 class BearTest < MiniTest::Test
 
-
   def setup
     @Yogi = Bear.new("Yogi", "grizzly", [])
     @Amazon = River.new("Amazon", ["Fish1", "Fish2", "Fish3", "Fish4"])
@@ -21,9 +20,8 @@ class BearTest < MiniTest::Test
     assert_equal(3, @Amazon.count_fish_in_river)
   end
 
-
-
-
-
+  def test_roar
+    assert_equal("Roar!", @Yogi.roar)
+  end
 
 end

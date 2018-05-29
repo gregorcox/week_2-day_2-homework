@@ -13,9 +13,4 @@ class RiverTest < MiniTest::Test
     assert_equal(4, @Amazon.count_fish_in_river())
   end
 
-
-
-
-
-
 end

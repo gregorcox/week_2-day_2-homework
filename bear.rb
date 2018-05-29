@@ -9,7 +9,7 @@ class Bear
   end
 
   def fish_in_stomach
-    return @stomach.length
+    return @stomach.length()
   end
 
   def eat(river)
@@ -18,11 +18,8 @@ class Bear
     river.fish().delete(fish_to_eat)
   end
 
-
-
-
-
-
-
+  def roar
+    return "Roar!"
+  end
 
 end

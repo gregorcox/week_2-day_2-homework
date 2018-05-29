@@ -7,17 +7,8 @@ class River
     @fish = fish
   end
 
-
-
   def count_fish_in_river
     return @fish.length
   end
-
-
-
-
-
-
-
 
 end
