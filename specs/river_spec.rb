@@ -9,8 +9,6 @@ class RiverTest < MiniTest::Test
     @Amazon = River.new("Amazon", ["Fish1", "Fish2", "Fish3", "Fish4"])
   end
 
-
-
   def test_count_fish_in_river
     assert_equal(4, @Amazon.count_fish_in_river())
   end

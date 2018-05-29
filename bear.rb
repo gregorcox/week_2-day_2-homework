@@ -13,9 +13,9 @@ class Bear
   end
 
   def eat(river)
-    fish_to_eat = river.fish.sample()
+    fish_to_eat = river.fish().sample()
     @stomach.push(fish_to_eat)
-    river.fish.delete(fish_to_eat)
+    river.fish().delete(fish_to_eat)
   end
 
 

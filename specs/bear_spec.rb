@@ -18,7 +18,7 @@ class BearTest < MiniTest::Test
   def test_eat
     @Yogi.eat(@Amazon)
     assert_equal(1, @Yogi.fish_in_stomach)
-    assert_equal(3, @Amazon)
+    assert_equal(3, @Amazon.count_fish_in_river)
   end
 
 
