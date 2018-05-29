@@ -8,7 +8,7 @@ class Bear
     @stomach = stomach
   end
 
-  def fish_in_stomach
+  def food_count
     return @stomach.length()
   end
 

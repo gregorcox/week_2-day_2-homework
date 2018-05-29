@@ -10,14 +10,14 @@ class BearTest < MiniTest::Test
     @Amazon = River.new("Amazon", ["Fish1", "Fish2", "Fish3", "Fish4"])
   end
 
-  def test_fish_in_stomach
-    assert_equal(0, @Yogi.fish_in_stomach)
+  def test_food_count
+    assert_equal(0, @Yogi.food_count)
   end
 
   def test_eat
     @Yogi.eat(@Amazon)
-    assert_equal(1, @Yogi.fish_in_stomach)
-    assert_equal(3, @Amazon.count_fish_in_river)
+    assert_equal(1, @Yogi.food_count)
+    assert_equal(3, @Amazon.fish_count)
   end
 
   def test_roar
